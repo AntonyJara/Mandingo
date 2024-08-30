@@ -36,23 +36,6 @@ h1 {
   border-radius: 10px;
 }
 
-h2 {
-  color: #f0f; /* Rosa neón */
-  text-shadow: 2px 2px 4px #000;
-}
-
-.product {
-  margin-bottom: 20px;
-}
-
-.product ul {
-  list-style: none;
-  padding: 0;
-}
-
-.product li {
-  margin-bottom: 5px;
-}
 
 /* Pie de página */
 footer {
@@ -64,9 +47,67 @@ footer {
 /* Para un efecto de neón en los títulos */
 h1, h2 {
   text-shadow: 0 0 10px #f0f, 0 0 20px #f0f, 0 0 30px #f0f;
+  text-align: center;
 }
 
 /* Para un efecto de degradado en el fondo */
 body {
   background: linear-gradient(45deg, #222, #000);
 } 
+
+
+
+
+/* Estilos para los productos en el menú */
+.menu h3 {
+  color: #ffcc00; /* Color dorado para los subtítulos */
+  text-shadow: 2px 2px 5px #000;
+  margin-bottom: 5px; /* Reducir el margen inferior */
+  line-height: 1.2; /* Reducir el alto de línea */
+}
+
+.product {
+  margin-bottom: 5px; /* Reducir el margen inferior */
+  color: #fff;
+  padding: 5px; /* Reducir el padding */
+  border-bottom: 1px solid #555;
+  line-height: 1.2; /* Reducir el alto de línea */
+}
+
+.product h4 {
+  font-size: 1.2em;
+  color: #ff69b4; /* Color rosa para los nombres de los productos */
+  text-shadow: 2px 2px 5px #000;
+  margin-bottom: 2px; /* Reducir el margen inferior */
+  line-height: 1.1; /* Reducir el alto de línea */
+}
+
+.product .price {
+  font-size: 1.1em;
+  color: #00ffcc; /* Color turquesa para los precios */
+  text-shadow: 1px 1px 3px #000;
+  margin-top: 2px; /* Reducir el margen superior */
+  margin-bottom: 5px; /* Reducir el margen inferior */
+  line-height: 1.1; /* Reducir el alto de línea */
+}
+
+.product p {
+  font-size: 0.9em;
+  color: #ddd;
+  margin-bottom: 5px; /* Reducir el margen inferior */
+  line-height: 1.2; /* Reducir el alto de línea */
+}
+
+/* Efecto de brillo en los precios */
+.product .price {
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 15px #00ffcc;
+  }
+  to {
+    text-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc, 0 0 40px #00ffcc;
+  }
+}
